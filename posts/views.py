@@ -4,7 +4,7 @@ from .models import Post
 from .serializers import PostSerializer
 
 
-class Postlist(generics.ListCreateAPIView):
+class PostList(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
